@@ -11,9 +11,9 @@ public class Client {
 	public static void main(String args[])
 	{
 		Student st = new Student();
-		st.setId("3");
-		st.setName("xyz");
-		st.setEmail("xyz@gmail.com");
+		st.setId("5");
+		st.setName("xyz11");
+		st.setEmail("xyz1212@gmail.com");
 		
 		//student object state in transient
 		Configuration cg = new Configuration();
