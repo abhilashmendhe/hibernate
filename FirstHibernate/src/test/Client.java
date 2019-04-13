@@ -1,4 +1,4 @@
-package teset;
+package test;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
