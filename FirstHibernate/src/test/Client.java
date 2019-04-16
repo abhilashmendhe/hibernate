@@ -1,5 +1,7 @@
 package test;
 
+import javax.transaction.Transaction;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -20,11 +22,12 @@ public class Client {
 		cg.configure("resources/hibernate.cfg.xml");
 		SessionFactory sf = cg.buildSessionFactory();
 		Session s = sf.openSession();
+		org.hibernate.Transaction t  = s.beginTransaction();
 		s.save(st);
 		
 		//student object state in persistent
 		
-		s.beginTransaction().commit();
+		t.commit();
 		
 		//student obj will move database
 		

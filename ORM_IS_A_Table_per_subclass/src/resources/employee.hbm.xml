@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    	
+    	<class name="beans.Employee" table="employee007" >
+    	
+    	<id name="id" />
+	    	<discriminator column="etype" />
+    		<property name="name" />		
+    		<property name="email" />
+    		<property name="salary" />
+    	
+    
+    	
+    	<joined-subclass name="beans.SEmployee" table="Semployee">
+    		<key column="id" />
+    		<property name="tool"/>
+    	</joined-subclass>
+    	
+    	<joined-subclass name="beans.HEmployee" table="Hemployee">
+  			<key column="id" />
+    		<property name="wh"/>
+    	</joined-subclass>
+    	
+    	<joined-subclass name="beans.AEmployee" table="Aemployee">
+    		<key column="id" />
+    		<property name="branchname"/>
+    	</joined-subclass>
+    	
+    	</class>
+    </hibernate-mapping>
