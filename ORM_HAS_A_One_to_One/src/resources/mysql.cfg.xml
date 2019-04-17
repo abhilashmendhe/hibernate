@@ -17,9 +17,9 @@
 		
 		<property name="hbm2ddl.auto">create</property>
 		<property name="show_sql">true</property>
-		
-		<mapping resource="resources/voter.hbm.xml"/>
+		<property name=""></property>
 		<mapping resource="resources/vote.hbm.xml"/>
+		<mapping resource="resources/voter.hbm.xml"/>
 		
 	</session-factory>
 

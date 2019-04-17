@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="FirstWeb" path="/FirstWeb" reloadable="true" source="org.eclipse.jst.jee.server:FirstWeb"/><Context docBase="Student_Registration" path="/Student_Registration" reloadable="true" source="org.eclipse.jst.jee.server:Student_Registration"/><Context docBase="ICICI_Register_Generator" path="/ICICI_Register_Generator" reloadable="true" source="org.eclipse.jst.jee.server:ICICI_Register_Generator"/></Host>
+      <Context docBase="FirstWeb" path="/FirstWeb" reloadable="true" source="org.eclipse.jst.jee.server:FirstWeb"/><Context docBase="Student_Registration" path="/Student_Registration" reloadable="true" source="org.eclipse.jst.jee.server:Student_Registration"/><Context docBase="ICICI_Register_Generator" path="/ICICI_Register_Generator" reloadable="true" source="org.eclipse.jst.jee.server:ICICI_Register_Generator"/><Context docBase="Pagination_Hibernate" path="/Pagination_Hibernate" reloadable="true" source="org.eclipse.jst.jee.server:Pagination_Hibernate"/><Context docBase="Pagination_hibernate_1_select" path="/Pagination_hibernate_1_select" reloadable="true" source="org.eclipse.jst.jee.server:Pagination_hibernate_1_select"/></Host>
     </Engine>
   </Service>
 </Server>
